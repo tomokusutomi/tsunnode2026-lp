@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>平戸くんち城下つんのーで祭2026｜10月24日（土）・25日（日）平戸市街商店街</title>
+<meta name="description" content="平戸の食と伝統が集う2日間。平戸自慢の逸品料理38店舗、ひらど軽トラ市、交流物産市、ステージイベント。2026年10月24日（土）・25日（日）11:00〜17:00、平戸市街商店街一帯（浦の町〜魚の棚町）。無料駐車場・無料シャトルバスあり。">
+<meta name="theme-color" content="#1c2152">
+<meta property="og:type" content="website">
+<meta property="og:title" content="平戸くんち城下つんのーで祭2026｜10/24（土）・25（日）">
+<meta property="og:description" content="平戸の食と伝統が集う2日間。38店舗の逸品料理、軽トラ市、物産市、ステージ。平戸市街商店街一帯で開催。">
+<meta property="og:image" content="/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23e2482d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ai:#1c2152;        /* 藍 */
+  --ai-2:#2a3170;
+  --shu:#e2482d;       /* 朱 */
+  --kaki:#f08a24;      /* 柿 */
+  --momo:#f6b3cd;      /* 桃 */
+  --kinari:#fbf6ee;    /* 生成り */
+  --ink:#1d1d22;
+  --sub:#5b5b66;
+  --line:#e7dfd2;
+  --sat:#2f6fd6;
+  --sun:#d93636;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--kinari);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,-apple-system,"Hiragino Sans",sans-serif;font-size:16px;line-height:1.75;letter-spacing:.02em;padding-bottom:84px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+.display{font-family:"Dela Gothic One","Zen Kaku Gothic New",sans-serif;font-weight:400;letter-spacing:.02em}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--ai);color:#fff;overflow:hidden}
+.hero-photo{position:relative;aspect-ratio:4/3.1;max-height:560px;width:100%;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:62% 55%}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,33,82,0) 45%,rgba(28,33,82,.85) 100%)}
+.hero-top{position:relative}
+.sun{position:absolute;left:50%;bottom:0;transform:translate(-50%,42%);width:min(70vw,360px);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 38% 35%,var(--kaki),var(--shu) 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.25);z-index:2;padding-bottom:6%}
+.sun .pre{font-weight:700;font-size:clamp(14px,3.6vw,19px);letter-spacing:.2em}
+.sun h1{margin:.05em 0 0;font-size:clamp(38px,11.5vw,62px);line-height:1.05}
+.sun .yr{font-family:"Dela Gothic One";font-size:clamp(16px,4.2vw,22px);letter-spacing:.3em;margin-top:.25em;opacity:.95}
+.hero-info{position:relative;z-index:3;padding:calc(min(70vw,360px)*.46) 20px 34px;text-align:center}
+.date{display:flex;justify-content:center;align-items:baseline;gap:.2em;font-family:"Dela Gothic One";line-height:1}
+.date .md{font-size:clamp(44px,13vw,64px)}
+.date .dw{display:inline-grid;place-items:center;width:1.55em;height:1.55em;border-radius:50%;font-size:clamp(15px,4vw,19px);font-family:"Zen Kaku Gothic New";font-weight:900;margin-left:.1em;transform:translateY(-.15em)}
+.dw.sat{background:#fff;color:var(--sat)} .dw.sun-d{background:#fff;color:var(--sun)}
+.date .sep{font-size:clamp(26px,8vw,40px);opacity:.7;margin:0 .15em}
+.time{margin:14px 0 4px;font-weight:700;font-size:18px}
+.place{margin:0;font-size:15px;opacity:.9}
+.tagline{margin:18px auto 0;display:inline-block;background:var(--momo);color:var(--ai);font-weight:900;padding:6px 18px;border-radius:999px;font-size:15px}
+.cta-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:12px;font-weight:900;text-decoration:none;font-size:16px;padding:10px 14px;text-align:center;line-height:1.3;border:0;cursor:pointer;font-family:inherit}
+.btn-primary{background:var(--shu);color:#fff}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.7)}
+.btn-dark{background:var(--ai);color:#fff}
+.btn-light{background:#fff;color:var(--ai);box-shadow:inset 0 0 0 2px var(--ai)}
+
+/* ---------- section ---------- */
+section{padding:56px 0}
+.sec-head{margin:0 0 22px}
+.sec-head .en{display:block;font-family:"Dela Gothic One";color:var(--shu);font-size:13px;letter-spacing:.25em}
+.sec-head h2{margin:.1em 0 0;font-size:clamp(26px,7vw,34px);line-height:1.3;font-weight:900;color:var(--ai)}
+.lead{font-size:16px;margin:0 0 8px}
+.wave{height:18px;background:
+  radial-gradient(circle at 10px -2px,transparent 12px,var(--ai) 13px) 0 0/20px 18px repeat-x}
+.intro{background:#fff;text-align:center}
+.intro p{margin:0 auto;max-width:34em}
+.intro .big{font-size:clamp(22px,6vw,28px);font-weight:900;color:var(--ai);line-height:1.5;margin-bottom:14px}
+.note{font-size:13px;color:var(--sub)}
+
+/* highlights */
+.hl{display:grid;gap:18px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 0 var(--line)}
+.card .ph{aspect-ratio:16/10;overflow:hidden;background:#eee}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .ph.duo{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.card .body{padding:16px 18px 20px}
+.card h3{margin:0 0 6px;font-size:20px;color:var(--ai);line-height:1.4}
+.card h3 .num{font-family:"Dela Gothic One";color:var(--shu);font-size:1.25em;margin:0 .08em}
+.card p{margin:0;font-size:15px}
+
+/* timetable */
+.tt{background:var(--ai);color:#fff}
+.tt .sec-head h2{color:#fff}
+.tt .sec-head .en{color:var(--momo)}
+.tabs{display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,.1);border-radius:12px;padding:4px;margin-bottom:18px}
+.tab{appearance:none;border:0;background:transparent;color:#fff;font:inherit;font-weight:900;font-size:16px;padding:12px 0;border-radius:9px;cursor:pointer}
+.tab[aria-selected="true"]{background:#fff;color:var(--ai)}
+.tab small{font-weight:500;opacity:.75;margin-left:.3em}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:14px 0;border-top:1px solid rgba(255,255,255,.14)}
+.tl li:first-child{border-top:0}
+.tl .t{font-family:"Dela Gothic One";font-size:18px;color:var(--momo);line-height:1.5}
+.tl .t.all{font-family:inherit;font-weight:900;font-size:14px}
+.tl .n{font-weight:700;line-height:1.5}
+.tl .d{display:block;font-weight:400;font-size:13px;opacity:.8;margin-top:2px}
+.tag{display:inline-block;font-size:11px;font-weight:900;padding:1px 8px;border-radius:4px;margin-left:6px;vertical-align:2px;background:rgba(255,255,255,.16)}
+.tag.warn{background:var(--kaki);color:#fff}
+[hidden]{display:none!important}
+
+/* family */
+.list{display:grid;gap:14px}
+.item{background:#fff;border-radius:var(--radius);padding:18px}
+.item h3{margin:0 0 4px;font-size:18px;color:var(--ai);line-height:1.45}
+.item .meta{font-size:14px;color:var(--sub);margin:0 0 8px}
+.item p{margin:0;font-size:15px}
+.item .btn{margin-top:12px;min-height:46px;font-size:15px}
+
+/* kunchi */
+.kunchi{background:#fff}
+.flow{display:grid;grid-template-columns:auto 1fr;gap:0 14px;margin:20px 0 10px}
+.flow .t{font-family:"Dela Gothic One";color:var(--shu);font-size:20px;line-height:1.4;text-align:right}
+.flow .x{padding:0 0 18px;border-left:3px solid var(--momo);padding-left:14px;position:relative}
+.flow .x::before{content:"";position:absolute;left:-8px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--shu)}
+.flow .x b{display:block;font-size:17px;color:var(--ai)}
+.flow .x span{font-size:14px;color:var(--sub)}
+.sched{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
+.sched th,.sched td{text-align:left;padding:10px 8px;border-top:1px solid var(--line);vertical-align:top}
+.sched th{white-space:nowrap;color:var(--ai);width:7.5em}
+
+/* access */
+.access .mapimg{background:#fff;border-radius:var(--radius);padding:8px;margin:0 0 16px}
+.facts{display:grid;gap:10px;margin:0 0 18px;padding:0;list-style:none}
+.facts li{background:#fff;border-radius:12px;padding:14px 16px;font-size:15px}
+.facts b{color:var(--ai);display:block;font-size:16px}
+.stack{display:grid;gap:10px}
+
+/* footer */
+footer{background:var(--ai);color:#fff;padding:44px 0 36px;font-size:14px}
+footer h2{font-size:18px;margin:0 0 10px}
+footer p{margin:0 0 10px;opacity:.9}
+footer .stack{margin:18px 0 24px}
+footer .btn-light{box-shadow:none}
+.small{font-size:12px;opacity:.75}
+
+/* sticky bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(251,246,238,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+.bar .in{max-width:720px;margin:0 auto;display:grid;grid-template-columns:1.35fr 1fr;gap:8px}
+.bar .btn{min-height:50px;font-size:15px}
+
+@media (min-width:760px){
+  .hl{grid-template-columns:1fr 1fr}
+  .list{grid-template-columns:1fr 1fr}
+  .hero-photo{aspect-ratio:16/8}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-top">
+    <div class="hero-photo">
+      <img src="img/hero.jpg" alt="平戸くんちの行列が商店街を進む様子" width="1600" height="1067" fetchpriority="high">
+    </div>
+    <div class="sun">
+      <span class="pre">平戸くんち城下</span>
+      <h1 class="display">つんのーで祭</h1>
+      <span class="yr">2026</span>
+    </div>
+  </div>
+  <div class="hero-info wrap">
+    <div class="date" aria-label="2026年10月24日土曜日と25日日曜日">
+      <span class="md">10.24</span><span class="dw sat">土</span>
+      <span class="sep">–</span>
+      <span class="md">25</span><span class="dw sun-d">日</span>
+    </div>
+    <p class="time">11:00〜17:00</p>
+    <p class="place">平戸市街商店街一帯（浦の町〜魚の棚町）</p>
+    <span class="tagline">みんなで「つんのーで」味わい尽くそう！</span>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#access" data-ev="nav_access">アクセス・駐車場</a>
+      <a class="btn btn-ghost" href="#schedule" data-ev="nav_schedule">タイムテーブル</a>
+    </div>
+  </div>
+</header>
+<div class="wave" aria-hidden="true"></div>
+
+<section class="intro">
+  <div class="wrap">
+    <p class="big">平戸の食と伝統が集う2日間。</p>
+    <p>平戸の秋祭り「平戸おくんち」にあわせて、城下の商店街が歩行者天国に。平戸の食材を使った逸品料理、軽トラ市、物産市、ステージが並びます。「つんのーで」は平戸の言葉で「連れ立って」。家族や友だちと、つんのーで来てください。</p>
+  </div>
+</section>
+
+<section id="highlights">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">HIGHLIGHTS</span><h2>見どころ</h2></div>
+    <div class="hl">
+      <article class="card">
+        <div class="ph duo"><img src="img/food-taichazuke.jpg" alt="平戸なつ香鯛茶漬" loading="lazy"><img src="img/food-nabe.jpg" alt="平戸の海の幸の鍋" loading="lazy"></div>
+        <div class="body">
+          <h3>平戸自慢の逸品料理<span class="num">38</span>店舗</h3>
+          <p>平戸産の農水産物や加工品を使った自慢の一品を、市内の飲食店と団体が商店街の店舗とテントで販売します。平戸なつ香鯛茶漬、中華ちまきなど、子どもから大人まで楽しめるメニューです。</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph duo"><img src="img/kei-tora.jpg" alt="ひらど軽トラ市の売り場" loading="lazy"><img src="img/ago.jpg" alt="平戸の干物" loading="lazy"></div>
+        <div class="body">
+          <h3>ひらど軽トラ市<span class="num">29</span>店舗</h3>
+          <p>毎月第4日曜日の軽トラ市を、今回は2日間開催。平戸の秋を代表する「あご」をはじめ、平戸で獲れた農水産物や加工品が軽トラックの荷台に並びます。</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph duo"><img src="img/bussan-kaki.jpg" alt="柿" loading="lazy"><img src="img/bussan-2.jpg" alt="交流都市の特産品" loading="lazy"></div>
+        <div class="body">
+          <h3>平戸交流物産市<span class="num">4</span>市</h3>
+          <p>平戸市と交流のある香川県善通寺市、大分県竹田市・臼杵市、福岡県うきは市から、野菜・果物・加工品が届きます。数に限りがあるので、お早めに。</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/nishiyama.jpg" alt="西山琳久さん" loading="lazy" style="object-position:50% 30%"></div>
+        <div class="body">
+          <h3>ステージイベント</h3>
+          <p>平戸市田平町出身、全日本歌唱力選手権「歌唱王」第13回優勝の西山琳久さんの歌謡ショー（24日）。田助ハイヤ節の生演奏、YOSAKOI、ダンス、バンドライブも。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="schedule" class="tt">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">TIME TABLE</span><h2>イベントスケジュール</h2></div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-sat" aria-controls="day-sat" aria-selected="true">24日<small>土</small></button>
+      <button class="tab" role="tab" id="tab-sun" aria-controls="day-sun" aria-selected="false">25日<small>日</small></button>
+    </div>
+    <ul class="tl" id="day-sat" role="tabpanel" aria-labelledby="tab-sat">
+      <li><span class="t">11:00</span><span class="n">巡視艇「かいどう」体験航海<span class="tag warn">要予約</span><span class="d">13:00の回もあり。平戸海上保安署。小学生以上、各回10名まで</span></span></li>
+      <li><span class="t">11:15</span><span class="n">北松農業高等学校（田平権現太鼓）</span></li>
+      <li><span class="t">12:00</span><span class="n">西山琳久歌謡ショー＆CD購入者対象特典会</span></li>
+      <li><span class="t">13:00</span><span class="n">ステージイベント（ちびっこ芸能）</span></li>
+      <li><span class="t">13:15</span><span class="n">歌唱王選手権大会2026 決勝大会<span class="tag">サブステージ</span><span class="d">平戸商工会議所青年部主催</span></span></li>
+      <li><span class="t">15:00</span><span class="n">平戸観光応援アンバサダー歌謡ショー＆トークライブ<span class="d">西山琳久・村山仁志。グッズ購入者対象特典会あり</span></span></li>
+      <li><span class="t all">終日</span><span class="n">チンドンかわち家<span class="d">会場を練り歩きます</span></span></li>
+    </ul>
+    <ul class="tl" id="day-sun" role="tabpanel" aria-labelledby="tab-sun" hidden>
+      <li><span class="t">11:00</span><span class="n">平戸ミュージックフェア<span class="tag">サブステージ</span><span class="d">平戸市内の各団体による演奏・演舞</span></span></li>
+      <li><span class="t">11:30</span><span class="n">YOSAKOI（風神社中）</span></li>
+      <li><span class="t">12:20</span><span class="n">大塚ヘルシーサークル（ダンス）</span></li>
+      <li><span class="t">13:00</span><span class="n">STUDIO SHINE（ダンス）</span></li>
+      <li><span class="t">13:50</span><span class="n">ビートルズコピーバンドライブ<span class="d">THE TRIBUTES・THE BELIEVE</span></span></li>
+      <li><span class="t">15:00</span><span class="n">田助ハイヤ節（生演奏）<span class="d">県指定無形民俗文化財</span></span></li>
+    </ul>
+    <p class="small" style="margin-top:18px">※イベント内容・日程・時間は変更になる場合があります。</p>
+  </div>
+</section>
+
+<section id="family">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">FOR FAMILIES</span><h2>家族で楽しむ</h2></div>
+    <div class="list">
+      <div class="item">
+        <h3>焼きたてカステラ食べ放題（熊屋ハロウィンイベント）</h3>
+        <p class="meta">24日・25日／500円（中学生以下300円）／数量限定</p>
+        <p>焼き上がりは11:00・13:00・15:00の予定。牛蒡餅のつかみ取りやイベントミッションも。ネオンがきらめくハロウィン仕様の店内で。</p>
+        <p class="note" style="margin-top:6px">問合せ：牛蒡餅本舗 熊屋 <a href="tel:0950222046">0950-22-2046</a></p>
+      </div>
+      <div class="item">
+        <h3>平戸の偉人を探せ！回遊スタンプラリー</h3>
+        <p class="meta">24日・25日 11:00〜16:00／各日先着30名</p>
+        <p>会場を歩き回る4人の偉人のうち3人に会ってスタンプを押してもらうと、本部で500円の秋まつりチケットがもらえます。ラリー用紙は各インフォメーションで。</p>
+      </div>
+      <div class="item">
+        <h3>巡視艇「かいどう」体験航海</h3>
+        <p class="meta">24日 11:00〜／13:00〜／小学生以上・各回10名まで</p>
+        <p>事前の申し込みが必要です。定員になり次第締め切り。有事の際は中止になります。</p>
+        <a class="btn btn-light" href="tel:0950223131" data-ev="tel_kaido">電話で申し込む（0950-22-3131）</a>
+      </div>
+      <div class="item">
+        <h3>平戸の特産品が当たるガラポン抽選</h3>
+        <p class="meta">24日・25日</p>
+        <p>会場内の参加店で500円買うごとに抽選補助券を1枚。2枚でガラポン1回。参加店は当日会場で配るパンフレットに載っています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kunchi" class="kunchi">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">HIRADO OKUNCHI</span><h2>日曜は、朝から平戸で一日。</h2></div>
+    <p class="lead">同じ週末は、亀岡神社例大祭「平戸おくんち」。25日（日）は大名行列を見てから、そのまま商店街へ。</p>
+    <div class="flow">
+      <span class="t">10:00</span><div class="x"><b>大名行列が出発</b><span>御神幸祭（8:30〜）</span></div>
+      <span class="t">11:00</span><div class="x"><b>つんのーで祭が開幕</b><span>商店街で食べ歩き、ステージ</span></div>
+      <span class="t">17:00</span><div class="x" style="border-color:transparent"><b>終了</b><span>交通規制は18:00まで</span></div>
+    </div>
+    <table class="sched">
+      <tr><th>10/24（土）</th><td>事始神事［宵祭］14:00〜 亀岡神社</td></tr>
+      <tr><th>10/25（日）</th><td>御神幸祭 8:30〜（大名行列出発 10:00〜）</td></tr>
+      <tr><th>10/26（月）</th><td>大々神楽 11:00〜（平戸神楽1番）、13:00〜（2番以降） 亀岡神社</td></tr>
+      <tr><th>10/27（火）</th><td>例大祭 10:00〜、献茶祭 13:00〜 亀岡神社</td></tr>
+    </table>
+    <p class="note" style="margin-top:12px">国指定重要無形民俗文化財「平戸神楽」の大大神楽（全24番）は、26日11時からの亀岡神社例大祭でのみ見られます。</p>
+  </div>
+</section>
+
+<section id="access" class="access">
+  <div class="wrap">
+    <div class="sec-head"><span class="en">ACCESS</span><h2>アクセス・駐車場</h2></div>
+    <div class="mapimg"><img src="img/map.jpg" alt="会場マップ。つんのーで祭エリア、交通規制区間、無料駐車場、有料駐車場、シャトルバス乗り場" loading="lazy"></div>
+    <ul class="facts">
+      <li><b>会場</b>平戸市街商店街一帯（浦の町〜魚の棚町）</li>
+      <li><b>無料駐車場と無料シャトルバス</b>開催両日、無料シャトルバスが運行します。駐車場とバス乗り場の位置は上の会場マップで確認してください。</li>
+      <li><b>交通規制</b>10:00〜18:00、会場周辺で交通規制があります。区間は会場マップの赤い線です。</li>
+    </ul>
+    <div class="stack">
+      <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=%E5%B9%B3%E6%88%B8%E5%B8%82%E6%96%87%E5%8C%96%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC" target="_blank" rel="noopener" data-ev="route_parking">無料駐車場（平戸文化センター）への経路</a>
+      <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%95%B7%E5%B4%8E%E7%9C%8C%E5%B9%B3%E6%88%B8%E5%B8%82%E6%B5%A6%E3%81%AE%E7%94%BA" target="_blank" rel="noopener" data-ev="map_venue">会場をGoogleマップで見る</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>平戸くんち城下つんのーで祭2026</h2>
+    <p>2026年10月24日（土）・25日（日）11:00〜17:00</p>
+    <div class="stack">
+      <a class="btn btn-light" href="tsunnode2026-pamphlet.pdf" target="_blank" rel="noopener" data-ev="pdf">パンフレット（PDF）を見る</a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/hiradotsunno_de/" target="_blank" rel="noopener" data-ev="instagram">Instagram @hiradotsunno_de</a>
+    </div>
+    <p><b>お問い合わせ</b><br>平戸市産業まつり実行委員会（平戸くんち城下つんのーで祭実行委員会）<br>〒859-5121 長崎県平戸市岩の上町1481-1（平戸商工会議所内）<br>電話 <a href="tel:0950223131">0950-22-3131</a></p>
+    <p class="small">主催：平戸市産業まつり実行委員会　※写真はイメージです。イベント内容・日程・時間は変更になる場合があります。</p>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="クイックアクセス">
+  <div class="in">
+    <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=%E5%B9%B3%E6%88%B8%E5%B8%82%E6%96%87%E5%8C%96%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC" target="_blank" rel="noopener" data-ev="route_parking_bar">駐車場への経路</a>
+    <a class="btn btn-dark" href="#schedule" data-ev="nav_schedule_bar">タイムテーブル</a>
+  </div>
+</nav>
+
+<script>
+/* ===== 計測設定 =====
+   Meta広告マネージャでピクセルを作成したら、IDをここに入れて再デプロイ。
+   経路ボタンのクリックは「RouteSearch」、電話は「Contact」として送信されます。 */
+var META_PIXEL_ID = "";
+
+if (META_PIXEL_ID) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', META_PIXEL_ID); fbq('track', 'PageView');
+}
+function track(name){
+  try{
+    if (window.fbq){
+      if (name.indexOf('route')===0 || name==='map_venue') fbq('trackCustom','RouteSearch',{button:name});
+      else if (name.indexOf('tel')===0) fbq('track','Contact',{button:name});
+      else fbq('trackCustom','Click',{button:name});
+    }
+    if (window.va) window.va('event',{name:name});
+  }catch(e){}
+}
+document.addEventListener('click',function(e){
+  var a=e.target.closest('[data-ev]'); if(a) track(a.getAttribute('data-ev'));
+});
+
+/* タイムテーブルのタブ。25日当日は日曜を先に表示 */
+(function(){
+  var tabs=[document.getElementById('tab-sat'),document.getElementById('tab-sun')];
+  var panels=[document.getElementById('day-sat'),document.getElementById('day-sun')];
+  function sel(i){tabs.forEach(function(t,j){t.setAttribute('aria-selected',i===j);panels[j].hidden=i!==j;});}
+  tabs.forEach(function(t,i){t.addEventListener('click',function(){sel(i);track(i?'tab_sun':'tab_sat');});});
+  var d=new Date(); if(d.getFullYear()===2026&&d.getMonth()===9&&d.getDate()===25) sel(1);
+})();
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
