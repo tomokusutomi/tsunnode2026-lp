@@ -22,6 +22,53 @@
 @media(min-width:600px){.mobile-break{display:none}.hero-stage{height:560px}.hero-title{padding:40px 32px}.hero-title .pre{font-size:34px}.hero-title h1{font-size:86px}.hero-title .yr{font-size:38px;max-width:660px}.hero-photo img{object-position:center 50%}.hero-food{right:max(30px,calc((100vw - 950px)/2));bottom:26px;gap:18px}.food-slip{width:165px}.food-slip+figure{width:150px}.food-slip img{height:132px}.food-slip figcaption{font-size:14px}.sun-disc{left:max(30px,calc((100vw - 950px)/2));width:170px;bottom:36px;font-size:31px}.ribbon{font-size:18px}.hero-info{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0 35px;padding-top:22px}.hero-info .date-block{grid-row:span 2}.hero-info .hero-nav{grid-column:1/-1}.date{font-size:63px}.date small{font-size:22px}.intro{padding:55px 0}.intro .big{font-size:36px}.list{grid-template-columns:1fr 1fr;column-gap:35px}.item:last-child{grid-column:1/-1}.access .wrap{max-width:850px}.tt .wrap{max-width:800px}}
 @media(max-width:359px){.wrap{padding-inline:16px}.hero-stage{height:348px}.hero-title{padding:20px 15px 0}.hero-title .pre{font-size:19px}.hero-title h1{font-size:10.8vw}.sun-disc{left:12px;width:98px;font-size:19px}.hero-food{right:12px;gap:6px}.food-slip{width:85px}.food-slip+figure{width:80px}.food-slip img{height:75px}.food-slip figcaption{font-size:10px}.ribbon{font-size:12px}.date{font-size:43px}.hero-nav a{font-size:14px}.card:first-child .ph{margin-inline:-16px}.bar p{font-size:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Food cutouts: supplied food photos, transparent WebP; outline follows each silhouette. */
+.hero-stage{height:400px}
+.hero-photo img{object-position:56% 42%}
+.hero-stage:after{background:linear-gradient(180deg,rgba(10,26,39,.57),transparent 48%,rgba(10,26,39,.14))}
+.hero-title{z-index:3}
+.hero-title .yr{position:absolute;top:29px;right:22px;padding:0;font-size:22px}
+.food-collage{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:min(100%,1000px);height:255px;pointer-events:none;z-index:2;transform-origin:bottom center}
+.food-sticker{position:absolute;height:auto;max-width:none;filter:drop-shadow(2px 0 0 #fffaf1) drop-shadow(-2px 0 0 #fffaf1) drop-shadow(0 2px 0 #fffaf1) drop-shadow(0 -2px 0 #fffaf1) drop-shadow(0 5px 3px #10253940);transform-origin:center}
+.sticker-skewer{width:40%;left:28%;bottom:115px;transform:rotate(7deg);z-index:1}
+.sticker-parfait{width:23%;right:3%;bottom:94px;transform:rotate(10deg);z-index:2}
+.sticker-bowl{width:41%;left:3%;bottom:3px;transform:rotate(-12deg);z-index:3}
+.sticker-fried{width:31%;right:3%;bottom:2px;transform:rotate(10deg);z-index:4}
+.sticker-fruit{width:35%;left:34%;bottom:-3px;transform:rotate(-5deg);z-index:5}
+.sun-disc{left:4%;bottom:168px;width:109px;font-size:20px;z-index:1;transform:rotate(-9deg)}
+.hero-info{padding-top:12px}
+@media(min-width:600px){
+ .hero-stage{height:550px}
+ .hero-title{padding-top:32px}
+ .hero-title h1{font-size:80px}
+ .hero-title .yr{top:47px;right:35px;font-size:32px}
+ .hero-photo img{object-position:center 44%}
+ .food-collage{height:315px;bottom:8px}
+ .sticker-bowl{width:26%;left:0;bottom:4px}
+ .sticker-skewer{width:25%;left:25%;bottom:22px;transform:rotate(-5deg)}
+ .sticker-fruit{width:23%;left:46%;bottom:2px}
+ .sticker-parfait{width:14%;right:17%;bottom:80px;transform:rotate(9deg)}
+ .sticker-fried{width:23%;right:-1%;bottom:0}
+ .sun-disc{left:max(30px,calc((100vw - 970px)/2));bottom:245px;width:136px;font-size:24px}
+}
+@media(max-width:599px){.food-collage{transform:translateX(-50%) scale(.93)}}
+@media(max-width:359px){
+ .hero-stage{height:385px}
+ .food-collage{height:233px}
+ .sun-disc{width:96px;font-size:19px;bottom:150px;left:3%}
+ .sticker-skewer{bottom:105px}
+ .sticker-parfait{bottom:88px}
+}
+
+/* Gentle side-to-side rocking driven by scroll; resting sticker angles stay intact. */
+.food-sticker{translate:calc(var(--food-sway,0) * var(--sway-distance,6px)) calc(var(--food-scroll,0) * -3px);rotate:calc(var(--food-sway,0) * var(--sway-angle,2.5deg));transform-origin:50% 75%}
+.sticker-skewer{--sway-distance:7px;--sway-angle:3deg}
+.sticker-parfait{--sway-distance:5px;--sway-angle:2.4deg;transform-origin:50% 85%}
+.sticker-bowl{--sway-distance:6px;--sway-angle:2deg}
+.sticker-fried{--sway-distance:6px;--sway-angle:2.5deg}
+.sticker-fruit{--sway-distance:7px;--sway-angle:2.8deg}
+@media(prefers-reduced-motion:reduce){.food-sticker{translate:none;rotate:none}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CH9TZ3GB5P"></script>
@@ -41,7 +88,13 @@ gtag('config', 'G-CH9TZ3GB5P');
 <div class="hero-photo"><img src="img/hero.jpg" alt="平戸くんちの行列が城下町の商店街を進む様子" width="1600" height="1067" fetchpriority="high"></div>
 <div class="hero-title"><span class="pre">平戸くんち城下</span><h1 class="display">つんのーで祭</h1><span class="yr">2026</span></div>
 <p class="sun-disc">平戸の食を<br>味わおう。</p>
-<div class="hero-food" aria-label="平戸自慢の逸品料理"><figure class="food-slip"><img src="img/food-taichazuke.jpg" alt="" width="800" height="600"><figcaption>平戸なつ香鯛茶漬</figcaption></figure><figure class="food-slip"><img src="img/food-chimaki.jpg" alt="" width="405" height="377"><figcaption>中華ちまき</figcaption></figure></div>
+<div class="food-collage" aria-label="当日販売される料理とスイーツ">
+  <img class="food-sticker sticker-skewer" src="img/sticker-skewer.webp" width="650" height="524" alt="香ばしく焼いた肉と野菜の串焼き">
+  <img class="food-sticker sticker-parfait" src="img/sticker-parfait.webp" width="319" height="650" alt="ベリーを添えた紫色のアイスのパフェ">
+  <img class="food-sticker sticker-bowl" src="img/sticker-bowl.webp" width="650" height="566" alt="卵黄とたっぷりの具材をのせた一杯">
+  <img class="food-sticker sticker-fried" src="img/sticker-fried.webp" width="634" height="650" alt="青い器に盛り付けたきつね色の揚げ物">
+  <img class="food-sticker sticker-fruit" src="img/sticker-fruit.webp" width="650" height="509" alt="いちごやバナナを盛り付けたフルーツのデザート">
+</div>
 </div>
 <p class="ribbon">みんなで「つんのーで」味わい尽くそう！</p><div class="wave" aria-hidden="true"></div>
 <div class="hero-info wrap"><div class="date-block"><p class="year">2026年 10月</p><p class="date"><span class="sat">24<small>日（土）</small></span><span class="dot">・</span><span class="sunday">25<small>日（日）</small></span></p><p class="time">11:00〜17:00</p></div><div><p class="place">平戸市街商店街一帯<span>浦の町〜魚の棚町</span></p><p class="restriction">交通規制 10:00〜18:00</p></div><nav class="hero-nav" aria-label="ページ内案内"><a href="#access" data-ev="nav_access">アクセス・駐車場<span aria-hidden="true">↓</span></a><a href="#schedule" data-ev="nav_schedule">タイムテーブル<span aria-hidden="true">↓</span></a></nav></div>
@@ -232,6 +285,49 @@ if (META_PIXEL_ID) {
       if(window.fbq){ if(ev==='route_search') fbq('trackCustom','RouteSearch',{button:n}); else if(ev==='contact_tel') fbq('track','Contact',{button:n}); }
     }catch(err){}
   });
+})();
+</script>
+<script>
+/* Scroll-driven sway: slightly different rhythms, with no idle animation. */
+(function(){
+ const hero=document.querySelector('.hero-stage');
+ const collage=document.querySelector('.food-collage');
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+ const stickers=Array.from(document.querySelectorAll('.food-sticker'));
+ if(!hero||!collage)return;
+ let frame=0,current=0,lastTime=0;
+ function update(now){
+  frame=0;
+  if(reduced.matches)return;
+  const rect=hero.getBoundingClientRect();
+  const target=Math.max(0,Math.min(1,-rect.top/Math.max(1,rect.height)));
+  const elapsed=lastTime?Math.min(64,now-lastTime):16;
+  lastTime=now;
+  if(rect.bottom<=0||rect.top>=window.innerHeight)current=target;
+  else current+=(target-current)*(1-Math.exp(-elapsed/85));
+  const settled=Math.abs(target-current)<.001;
+  if(settled)current=target;
+  collage.style.setProperty('--food-scroll',current.toFixed(4));
+  stickers.forEach((sticker,i)=>{
+   const sway=Math.sin(current*Math.PI*(3.2+i*.18))*(i%2?-1:1);
+   sticker.style.setProperty('--food-sway',sway.toFixed(4));
+  });
+  if(!settled)frame=requestAnimationFrame(update);
+  else lastTime=0;
+ }
+ function queue(){if(!reduced.matches&&!frame)frame=requestAnimationFrame(update);}
+ function preference(){
+  cancelAnimationFrame(frame);frame=0;lastTime=0;current=0;
+  collage.style.removeProperty('--food-scroll');
+  stickers.forEach(sticker=>sticker.style.removeProperty('--food-sway'));
+  queue();
+ }
+ window.addEventListener('scroll',queue,{passive:true});
+ window.addEventListener('resize',queue,{passive:true});
+ window.addEventListener('pageshow',queue);
+ document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0;lastTime=0;}else queue();});
+ reduced.addEventListener('change',preference);
+ queue();
 })();
 </script>
 </body>
